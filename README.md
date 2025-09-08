@@ -6,14 +6,15 @@ Game runner: [fastchess](https://github.com/Disservin/fastchess/)
 
 Rules:
 1. Required components can be provided to download in compile time, but not in runtime.
-2. Banned things:
+2. Disqualification requirements:
+  - Using strong engines as the code
   - Compiler-specific headers
-  - Threading APIs
-  - std::cout/std::cin (comment them)
+  - Using threading APIs
   - Writing or executing files/code in runtime
   - Interact with Internet in runtime
   - Dynamic amount of memory allocation
   - More than 1024MB of memory used
+  - Timeout/illegal move(s)
 3. Example of a valid bot: 
 ```
 #include "chess.hpp"
